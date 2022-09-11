@@ -33,3 +33,10 @@ h1 {
     padding-bottom: 20px;
     text-align: center;
 }
+
+table,
+th,
+td {
+    border: 1px black;
+    border-collapse: collapse;
+}
