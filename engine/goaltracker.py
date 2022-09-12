@@ -1,10 +1,23 @@
 """Uses other files to track goals"""
-from datetime import datetime
+from turtle import back
+import pandas as pd
+from dateops import DateOps
+from pandasop import PandasOp
 
 
-class Goaltracker:
+class Goaldb:
     """Will be the main backbone to the webapp"""
-    
+    backend_db = PandasOp.initialize_df()
+
+
+    @staticmethod
+    def return_earliest_date():
+        return PandasOp.series_to_list(Goaldb.back_df.start_date)
+
+    @staticmethod
+    def current_column_headers():
+        pass
+
     def add_goal():
         pass
 
